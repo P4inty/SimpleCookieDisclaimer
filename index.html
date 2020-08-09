@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!-- Auf Body muss 'onload="checkCookies()"' -->
+<body onload="checkCookies()">
+
+<!-- Cookie Disclaimer kann so komplett eingebunden werden, 'style' kann mit entsprechenden css-Klassen
+      ersetzt werden -->
+<div id="cookie-disclaimer"
+     style="z-index: 99; position: fixed; right: 1rem; bottom: 1rem; background: #FAFAFA; padding: 2rem; width: 30%; display: none">
+    <p>Diese Website nutzt Cookies, um Ihnen eine bestmögliche Erfahrung bieten zu können.</p>
+    <a href="#" style="display: block; padding-bottom: 1rem">Mehr Infos</a>
+    <button onclick="setCookie()" style="background: aquamarine; padding: 1rem 2rem; border: none">Verstanden</button>
+</div>
+</body>
+
+<!-- Muss am Ende eingefügt werden -->
+<script src="cookie-disclaimer.js"></script>
+</html>
